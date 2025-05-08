@@ -1,0 +1,110 @@
+:root {
+    --bg-color-dark: #181818;
+    --text-color-dark: white;
+    --btn-color-dark: #635bff;
+    --btn-hover-dark: #4a46e0;
+
+    --bg-color-light: #f5f5f5;
+    --text-color-light: #333;
+    --btn-color-light: #4CAF50;
+    --btn-hover-light: #388E3C;
+}
+
+
+body {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition:  0.3s, color 0.3s;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: var(--btn-color-dark);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-dark);
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 250px;
+}
+
+.link-text {
+    color: var(--btn-color-dark);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.link-text:hover {
+    color: cadetblue;
+}
+
+.delete-btn {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.light-mode {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+.light-mode .btn {
+    background-color: var(--btn-color-light);
+}
+
+.light-mode .btn:hover {
+    background-color: var(--btn-hover-light);
+}
+
+.light-mode .link-text {
+    color: var(--btn-color-light);
+}
+.edit {
+    background-color: orange;
+    border: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 10px;
+}
